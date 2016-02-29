@@ -1,0 +1,85 @@
+body {
+  font: 12pt Verdana,Geneva,sans-serif;
+  background: white;
+}
+
+span.gen-label {
+  min-width: 5em;
+  display: inline-block;
+}
+
+input.gen-param {
+  width: 4em;
+  text-align: right;
+}
+
+#generator {
+  display: inline-block;
+  border: 2px solid #88f;
+  background: #eef;
+  padding: 1em;
+  float: right;
+}
+
+input {
+  background: white;
+  border: 1px solid #ccf;
+}
+
+h1 {
+  font-size: 20pt;
+  font-weight: normal;
+}
+
+#generator > h1 {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+  text-align: center;
+}
+
+.gen-button-row {
+  text-align: center;
+  padding-top: 1em;
+}
+
+input#generate-button, input#reset-puzzle {
+  left: auto;
+  right: auto;
+  font-size: 20pt;
+}
+
+#puzzle-table {
+  margin: 1em;
+  padding: 0.5em;
+  border: 2px solid #88f;
+}
+
+#puzzle-table td {
+  width: 2em;
+  text-align: center;
+  background: #eef;
+  cursor: pointer ;
+}
+
+#puzzle-table tr {
+  height: 2em;
+  text-align: center;
+}
+
+p#share-puzzle {
+  font-size: 10pt;
+}
+
+a {
+  text-decoration: none;
+  color: #00a;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+div#notes {
+  margin-top: 2em;
+  font-size: 10pt;
+  color: #888;
+}

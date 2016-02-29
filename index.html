@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Number Grid Puzzle</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="generator">
+    <h1>Generator</h1>
+    <div>
+      <span class="gen-label">Height:</span>
+      <input class="gen-param" id="min-height" type="number" min="1" max="100" value="2"> –
+      <input class="gen-param" id="max-height" type="number" min="1" max="100" value="5">
+    </div>
+    <div>
+      <span class="gen-label">Width:</span>
+      <input class="gen-param" id="min-width" type="number" min="1" max="100" value="2" onchange=""> –
+      <input class="gen-param" id="max-width" type="number" min="1" max="100" value="5">
+    </div>
+    <div>
+      <span class="gen-label">Clicks:</span>
+      <input class="gen-param" id="min-clicks" type="number" min="1" max="100" value="2"> –
+      <input class="gen-param" id="max-clicks" type="number" min="1" max="100" value="6">
+    </div>
+    <div class="gen-button-row">
+      <input id="generate-button" type="button" value="Generate puzzle!">
+    </div>
+  </div>
+  <div id="puzzle">
+    <h1>Number Grid Puzzle</h1>
+    <p>Clicking a square reduces all numbers in the same row or column by 1. Goal: reduce all numbers to 0. </p> 
+    <table id="puzzle-table"></table>
+    <p id="puzzle-status"></p>
+    <div><input id="reset-puzzle" type="button" value="Reset Puzzle"></div>
+    <p id="share-puzzle">Shareable link to this puzzle:<br><a href="" id="puzzle-link"></a></p>
+  </div>
+  <div id="notes">
+    <p>I didn't invent this. I stole it from
+      <a href="https://play.google.com/store/apps/details?id=jp.nobody.skd.Sifar&hl=en">Sifar</a> and
+      <a href="https://play.google.com/store/apps/details?id=com.cleverkiwigames.kudosu&hl=en">Kudosu</a>.
+      I just felt like coding up a clone of my own.</p>
+    <p>&nbsp;&nbsp;&nbsp;—&nbsp;Maks Verver &lt;maksverver@geocities.com&gt; February 2016
+  </div>
+  <script src="code.js" type="text/javascript"></script>
+</body>
+<html>
